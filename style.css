@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --primary-color: rgb(2, 53, 2);
+    --secondary-color: rgb(119, 255, 119);
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+div {
+    width: 100%;
+}
+
+header {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+a.logo {
+    margin-right: 70px;
+}
+
+.logo {
+    margin-right: 20px;
+    height: 150px;
+}
+
+.navlist {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    opacity: 0;
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navlist.active {
+    opacity: 1;
+}
+
+.navlist ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background: rgba(0, 128, 0, .7);
+    list-style: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
+.navlist ul li {
+    padding: 5px;
+    border-radius: 5px;
+
+    &:hover {
+        background: #fff;
+    }
+
+
+    &>a {
+        text-decoration: none;
+    }
+}
+
+.navlist ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 34px;
+    font-family: 'Nova Square', cursive;
+
+    &:hover {
+        background: #fff;
+        color: green;
+        border-radius: 4px;
+    }
+}
+
+
+
+.navlist ul li:hover>a {
+    color: green;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.menu-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.hero {
+    min-height: 500px;
+    background: url("./images/background.png") rgb(2, 53, 2);
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+}
+
+.hero h4 {
+    font-size: 40px;
+    font-family: 'Paprika', cursive;
+}
+
+.hero span {
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.discover {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    background: rgb(119, 255, 119);
+    min-height: 350px;
+    color: var(--primary-color);
+}
+
+.discover h2 {
+    font-family: 'Paprika', cursive;
+}
+
+.discover span {
+    font-weight: 700;
+}
+
+.coffee-img {
+    height: 300px;
+    width: 100%;
+    background: red;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.discover-preview h2 {
+    font-size: 35px;
+}
+
+.discover-preview p {
+    padding: 20px 0;
+}
+
+.read__more {
+    padding: 8px 30px;
+    color: #fff;
+    background: var(--primary-color);
+    margin-top: 40px;
+    cursor: pointer;
+
+    &:hover {
+        background: #fff;
+        color: green;
+    }
+}
+
+.review {
+    padding: 100px 20px;
+    background: rgb(134, 75, 75);
+}
+
+
+.section-head {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.section-label {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.section-icon {
+    width: 30px;
+    height: 30px;
+}
+
+.reviews {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-block: 30px;
+    gap: 20px;
+}
+
+
+.review-card {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.client-name {
+    font-weight: bold;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.ft__wrapper {
+    background: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+    gap: 30px;
+    width: 100%;
+}
+
+
+.ft-section-label {
+    color: #fff;
+    font-size: 25px;
+}
+
+.ft-navlist ul {
+    list-style: none;
+}
+
+.ft-section-hint {
+    color: var(--secondary-color);
+}
+
+.subscribe-form {
+    display: grid;
+    gap: 10px;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.submit-btn {
+    padding: 5px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background-color: yellowgreen;
+    }
+}
+
+.footer-section-head {
+    margin-bottom: 15px;
+}
+
+.ft-navlist {
+    display: flex;
+    margin-top: 10px;
+}
+
+.ft-navlist ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.ft-navlist a {
+    color: #fff;
+}
+
+.ft_last {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.ft_icon {
+    width: 30px;
+    height: 30px;
+}
+
+.cmp_logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+.ft_last a {
+    color: var(--secondary-color);
+}
+
+.copyright {
+    padding: 30px;
+    background: var(--secondary-color);
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 12px;
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: initial;
+        flex-direction: row;
+        padding: 50px 50px;
+        top: 50px;
+        width: 100%;
+    }
+
+    .logo {
+        margin-right: 20px;
+        height: 250px;
+    }
+
+    .navlist {
+        all: unset;
+    }
+
+    .navlist ul {
+        flex-direction: unset;
+        width: fit-content;
+        gap: 1em;
+        background: green;
+        list-style: none;
+        border-radius: 5px;
+        margin-top: 0;
+        padding: 5px;
+
+    }
+
+    .navlist ul li {
+        padding: 5px 10px;
+    }
+
+    .navlist ul li a {
+        font-size: inherit;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .discover {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .coffee-img {
+        width: 70%;
+        height: 90%;
+        margin: auto;
+    }
+
+    .review {
+        padding: 100px;
+        width: 100%;
+    }
+
+    .reviews {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .ft__wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 50px 100px;
+        width: 100%;
+
+    }
+
+    .ft-navigations {
+        margin: auto;
+        width: 70%;
+    }
+
+    .cmp_logo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .copyright {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Borcelle - Get your favorite coffee in short time</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <meta name="description" content="Coffee Borcelle">
+</head>
+
+<body>
+    <header>
+        <a href="" class="logo">
+            <img src="./images/logo.png" alt="" class="logo">
+        </a>
+        <nav class="navlist">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Purchase</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+        <button class="menu-btn"><img src="./icons/menu.png" alt="" class="menu-icon"></button>
+    </header>
+    <main>
+        <div class="hero">
+            <h4>Coffee Makes Mood</h4>
+            <span>"Indulge in Every Sip: Experience the Richness of Cofffe"
+            </span>
+        </div>
+
+        <section class="discover">
+            <img src="./images/hot-coffee.jpg" alt="" class="coffee-img">
+            <div class="discover-preview">
+                <h2>Discover Coffee Borcelle</h2>
+                <span>Elevating Your Coffee Experience</span>
+
+                <p>At Coffee Borcelle, we're on a mission to redefine your coffee moments. Our carefully curated
+                    selection of premium beans, sourced from world's most renowned coffee regions.</p>
+                <p>With expert craftsmanship and a commitment to quality, Join us un savoring the art of coffee, one cup
+                    at a time.</p>
+                <a href="" class="read__more">Read More</a>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="section-head">
+                <span class="section-label">Reviews <img src="/icons/coffee-cup.png" alt="coffee-cup.png"
+                        class="section-icon"></span>
+                <p class="section-detail">What other people are saying!</p>
+            </div>
+
+            <div class="reviews">
+                <div class="review-card">
+                    <p class="client-review">"indulge in the sublime experience of Coffee Borcelle, where every sip is a
+                        journey to flavor paradise. Crafted with precision, our rich blends ignite the senses and
+                        redefine coffee appreciation"
+                    </p>
+                    <span class="client-name">@elonmusk</span>
+                </div>
+                <div class="review-card">
+                    <p class="client-review">"Discover a world of taste with Coffee Borcelle. Each cup is a masterpiece,
+                        blending aromas and flavors that dance on your palate. Join us in celebrating coffee at its
+                        finest"
+                    </p>
+                    <span class="client-name">@JeffBazos</span>
+                </div>
+                <div class="review-card">
+                    <p class="client-review">Welcome to the heart and soul of coffee possion - Coffee Borcelle. Our
+                        carefully curated beans are an ode to craftmanship brewing a story of perfection in every cup
+                    </p>
+                    <span class="client-name">@MrBeast</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="ft__wrapper">
+            <div>
+                <div class="footer-section-head">
+                    <h3 class="ft-section-label">Contact Us</h3>
+                    <span class="ft-section-hint">Send us a message</span>
+                </div>
+
+                <form class="subscribe-form" action="">
+                    <input type="text" placeholder="Full name">
+                    <input type="email" name="" id="" placeholder="Your eamil">
+                    <textarea name="" placeholder="Your Message" id="" cols="20" rows="10"></textarea>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="ft-sec ft-navigations">
+                <div class="footer-section-head">
+                    <h3 class="ft-section-label">Contact Us</h3>
+                    <span class="ft-section-hint">Send us a message</span>
+                </div>
+
+                <nav class="ft-navlist">
+                    <ul>
+                        <li><a href="">- Home</a></li>
+                        <li><a href="">- About Us</a></li>
+                        <li><a href="">- Feature</a></li>
+                        <li><a href="">- Pricing</a></li>
+                        <li><a href="">- Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="ft_last">
+                <img src="./images/logo.png" alt="" class="cmp_logo">
+                <a class="cta-link" href="tel:+0803000000">
+                    <img src="/icons/call.png" alt="call.png" class="ft_icon">
+                    <span>(234) 803 000 0000</span>
+                    <a class="cta-link" href="mailto:coffeeborcelle@gmail.com">
+                        <img src="/icons/email.png" alt="email.png" class="ft_icon">
+                        <span>coffeeborcelle@gmail.com</span>
+                    </a>
+            </div>
+        </div>
+        <div class="copyright">
+            <small class="copyright_text">Copyright 2023 All Right Reserved Eminent Technologies.</small>
+        </div>
+    </footer>
+    <script>
+        const menu_btn = document.querySelector('.menu-btn')
+        const navlist = document.querySelector(".navlist")
+
+        menu_btn.addEventListener('click', () => {
+            navlist.classList.toggle("active")
+        })
+    </script>
+</body>
+
+</html>
